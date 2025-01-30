@@ -3,6 +3,7 @@ git add filename - to add a file to the staging area
 git add . - to add all file to the staging aarea
 git status -  to see if your working tree is clean, to see if you have added all  file to staging area
 git commit - to put your files in the local repository and add a message while comitting
+git pull - It is used to get the files that are on the github repository online and bring it  to the local working directory.
 git log - to see all the commits that you have been made on a particular repository and to see the time the changes was made and who made the changes
 git diff commit-1-id commit-2-id - to see the difference between tanew and a previous commmit
 git diff head head~1 - it does the same work of checking difference between commit(head:is the latest commit, head~1: is the previous commit.
