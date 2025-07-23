@@ -1,10 +1,83 @@
-git init - to initalize a repository in the terminal
-git add filename - to add a file to the staging area
-git add . - to add all file to the staging aarea
-git status -  to see if your working tree is clean, to see if you have added all  file to staging area
-git commit - to put your files in the local repository and add a message while comitting
-git pull - It is used to get the files that are on the github repository online and bring it  to the local working directory.
-git log - to see all the commits that you have been made on a particular repository and to see the time the changes was made and who made the changes
-git diff commit-1-id commit-2-id - to see the difference between tanew and a previous commmit
-git diff head head~1 - it does the same work of checking difference between commit(head:is the latest commit, head~1: is the previous commit.
-git annotate - used to see the content of a file and see who made any modification.
+✅ Complete Essential Git Commands
+📁 Repository Setup
+git init – Initialize a new Git repository
+
+git clone <repo-url> – Clone an existing repository
+
+📥 Staging & Committing
+git add filename – Add a specific file to staging
+
+git add . – Add all files to staging
+
+git status – Show current status of files
+
+git commit -m "message" – Commit staged files
+
+git commit --amend – Modify the last commit
+
+📤 Pushing & Pulling
+git push – Push changes to remote
+
+git push -u origin main – Push and set upstream branch
+
+git push --set-upstream origin main – Alternative to set upstream
+
+git push --force – Force push (⚠️ use with caution)
+
+git pull – Fetch and merge changes from remote
+
+git fetch – Download commits but don’t merge
+
+🧭 Branching
+git branch – List local branches
+
+git branch <name> – Create a new branch
+
+git checkout <branch> – Switch branches
+
+git checkout -b <name> – Create and switch to new branch
+
+git merge <branch> – Merge a branch into current
+
+git rebase <branch> – Reapply commits on top of another base
+
+🌍 Remote Repositories
+git remote -v – Show current remote URLs
+
+git remote add origin <url> – Add a remote repo
+
+git remote remove origin – Remove remote repo
+
+🔍 History & Inspection
+git log – Show commit history
+
+git log --oneline – Short view of history
+
+git diff – Show unstaged changes
+
+git diff --staged – Show staged changes
+
+git diff commit1-id commit2-id – Show diff between commits
+
+git diff HEAD HEAD~1 – Compare latest commit with one before
+
+git show <commit-id> – Show details of a commit
+
+git annotate filename – Who last modified each line
+
+🔄 Undo / Reset / Fix Mistakes
+git reset – Unstage all files
+
+git reset HEAD filename – Unstage a specific file
+
+git restore filename – Discard changes in working directory
+
+git restore --staged filename – Remove file from staging
+
+git reset --soft HEAD~1 – Undo last commit, keep changes staged
+
+git reset --mixed HEAD~1 – Undo last commit, unstage changes
+
+git reset --hard HEAD~1 – Undo last commit, discard changes (⚠️ irreversible)
+
+git revert <commit-id> – Revert a commit safely 
