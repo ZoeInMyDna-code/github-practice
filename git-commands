@@ -81,3 +81,5 @@ git reset --mixed HEAD~1 – Undo last commit, unstage changes
 git reset --hard HEAD~1 – Undo last commit, discard changes (⚠️ irreversible)
 
 git revert <commit-id> – Revert a commit safely 
+
+git remote set-url origin git@github.com:your-username/your-repo.git : This command changes the git remote from https to ssh
